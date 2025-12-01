@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ChevronRight, CalendarDays } from "lucide-react"
+import { ChevronRight, Truck } from "lucide-react"
 
 export default function HeroSection() {
   return (
@@ -36,7 +36,6 @@ export default function HeroSection() {
             without the stress.
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"
@@ -50,12 +49,11 @@ export default function HeroSection() {
               variant="outline"
               className="border-2 border-cream/80 bg-transparent text-cream hover:bg-cream hover:text-deep-brown font-semibold text-lg px-8 py-6 transition-all duration-300"
             >
-              <CalendarDays className="mr-2 h-5 w-5" />
-              Book a Table
+              <Truck className="mr-2 h-5 w-5" />
+              Order Now
             </Button>
           </div>
 
-          {/* Trust Indicators */}
           <div className="flex flex-wrap items-center gap-6 mt-12 pt-8 border-t border-cream/20">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
@@ -69,7 +67,7 @@ export default function HeroSection() {
                   </div>
                 ))}
               </div>
-              <span className="text-cream/80 text-sm">500+ Happy Customers</span>
+              <span className="text-cream/80 text-sm">500+ Happy Deliveries</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="flex">
@@ -80,6 +78,10 @@ export default function HeroSection() {
                 ))}
               </div>
               <span className="text-cream/80 text-sm">4.9 Rating</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Truck className="h-5 w-5 text-gold" />
+              <span className="text-cream/80 text-sm">Delivery Only</span>
             </div>
           </div>
         </div>
